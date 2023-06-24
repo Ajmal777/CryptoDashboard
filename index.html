@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoDashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <form action="" method="get" class="myForm">
+        <input type="text" name="search" id="search" placeholder="Search By Name or Symbol">
+        <button class="sort-btn" id="sortCap" onclick="sortByMarketCap()" type="button">Sort By Mkt Cap</button>
+        <button class="sort-btn" id="sortPer" onclick="sortByPercentage()" type="button">Sort By percentage</button> 
+    </form>
+    <div id="container"></div>
+</body>
+</html>
