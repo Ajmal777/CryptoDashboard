@@ -23,13 +23,22 @@ async function getData(url){
 
 // no proper information about the sort method was given, hence I used these prarameters to get the sorted and updated data.
 function sortByPercentage(){
-    const newUrl = url + '&order=price_change_percentage_24h_desc';
-    getData(newUrl);
+    // const newUrl = url + '&order=price_change_percentage_24h_desc';
+    // getData(newUrl);
+
+    const sortedData = copyData.sort((a, b)=>{
+        return b.price_change_percentage_24h - a.price_change_percentage_24h;
+    });
+    createTable(sortedData);
 }
 
 function sortByMarketCap(){
-    const newUrl = url + '&order=market_cap_desc';
-    getData(newUrl);
+    // const newUrl = url + '&order=market_cap_desc';
+    // getData(newUrl);
+    const sortedData = copyData.sort((a, b)=>{
+        return b.market_cap - a.market_cap;
+    });
+    createTable(sortedData);
 }
 
 
