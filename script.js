@@ -1,4 +1,4 @@
-const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10&page=1&sparkline=false`;
+const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=25&page=1&sparkline=false`;
 
 const container = document.getElementById('container');
 
